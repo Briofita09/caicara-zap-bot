@@ -1,0 +1,19 @@
+{
+  "name": "projeto_agatha",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "bot para disparo de mensagens ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Felipe Briofita",
+  "license": "ISC",
+  "dependencies": {
+    "jsontoxml": "^1.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.18.2",
+    "xlsx": "^0.18.5"
+  }
+}
