@@ -26,7 +26,7 @@ async function sendMessages(contacts) {
         if (
           sheet1[j].Tutor !== undefined &&
           personContacts[i].name.trim() === sheet1[j].Tutor.trim() &&
-          sheet1[j].Sexo.trim() === "Macho"
+          sheet1[j].Sexo.trim().toLowerCase() === "macho"
         ) {
           console.log(
             `Olá, ${sheet1[j].Tutor}, fizemos o fechamento do ${sheet1[j].Clientes}. O total foi de R$ ${sheet1[j].Total}`
@@ -38,7 +38,7 @@ async function sendMessages(contacts) {
         } else if (
           sheet1[j].Tutor !== undefined &&
           personContacts[i].name.trim() === sheet1[j].Tutor.trim() &&
-          sheet1[j].Sexo.trim() === "Femea"
+          sheet1[j].Sexo.trim().toLowerCase() === "femea"
         ) {
           console.log(
             `Olá, ${sheet1[j].Tutor}, fizemos o fechamento da ${sheet1[j].Clientes}. O total foi de R$ ${sheet1[j].Total}`
